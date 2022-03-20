@@ -1,0 +1,24 @@
+$white:#fff;
+$black:#000000;
+$blue:#0074C2;
+$gray:#F2F2F2;
+$fonts:  ('Roboto-Regular', 400);
+@each $name, $weight in $fonts {
+    @font-face {
+        font-family: $name;
+        src: url('../fonts/#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+}
