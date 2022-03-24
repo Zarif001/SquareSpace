@@ -146,6 +146,7 @@ lastText.forEach(elem =>{
     lastShadowText.innerHTML = '$ USD'
     elem.addEventListener('click', () =>{
         lastShadowText.innerHTML = elem.innerHTML
+        lastSort[0].classList.remove('active')
     })
 })
 
@@ -153,6 +154,7 @@ lastDescribe.forEach(elem =>{
     lastLangText.innerHTML = 'ENGLISH'
     elem.addEventListener('click', () => {
         lastLangText.innerHTML = elem.innerHTML
+        lastSort[1].classList.remove('active')
     })
 })
 
