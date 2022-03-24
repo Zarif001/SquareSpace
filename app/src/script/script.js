@@ -125,7 +125,10 @@ exLeft.addEventListener('click', prevSlide)
 
 const lastButton = document.querySelectorAll('.footer__content-button'),
     lastSort = document.querySelectorAll('.footer__content-sort'),
-    lastText = document.querySelectorAll('.footer__conent-text'),
+    lastText = document.querySelectorAll('.footer__content-text'),
+    lastShadowText = document.querySelector('.footer__content-shadowText'),
+    lastLangText = document.querySelector('.footer__content-langText'),
+    lastDescribe = document.querySelectorAll('.footer__content-describe'),
     lastSpan = document.querySelectorAll('.footer__content-span')
 
 lastButton.forEach((btn, i) =>{
@@ -133,15 +136,24 @@ lastButton.forEach((btn, i) =>{
         lastAddSort(i)
     })
 })
+
 function lastAddSort(index) {
     lastSort[index].classList.toggle('active')
     lastSpan[index].classList.toggle('active')
 }
 
-function lastAddtext(index) {
-        lastText.forEach(item =>{
-        item.textContent = ''  
-        })
-        lastText[index].innerHTML = item.innerHTML
+lastText.forEach(elem =>{
+    lastShadowText.innerHTML = '$ USD'
+    elem.addEventListener('click', () =>{
+        lastShadowText.innerHTML = elem.innerHTML
+    })
+})
 
-} 
+lastDescribe.forEach(elem =>{
+    lastLangText.innerHTML = 'ENGLISH'
+    elem.addEventListener('click', () => {
+        lastLangText.innerHTML = elem.innerHTML
+    })
+})
+
+

@@ -169,6 +169,8 @@
 
             &-btn:nth-last-child(1) {
                 padding: 15px 20px;
+                margin: 0px;
+                margin-top: 15px;
             }
         }
     }
@@ -290,6 +292,7 @@
         &__point{
             &-slide{
                 width: 300px;
+                margin-right: auto;
             }
             &-slides img{
                 width: 300px;

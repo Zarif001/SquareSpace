@@ -54,13 +54,25 @@
             }
         }
 
-        &-text {
+        &-text,
+        &-shadowText,
+        &-langText,
+        &-describe {
             text-transform: uppercase;
             color: $white;
             font-size: 14px;
             line-height: 14px;
             font-family: 'Roboto-Regular';
             padding: 17px 15px;
+            cursor: pointer;
+
+        }
+
+        &-text,
+        &-describe {
+            border: 2px solid #1A1A1A;
+            background: $black;
+            box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, .5);
         }
 
         &-right {
