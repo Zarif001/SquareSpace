@@ -473,7 +473,8 @@
             font-family: 'Roboto-Regular';
             margin-right: 22px;
         }
-        &-picture{
+
+        &-picture {
             position: relative;
             height: 373px;
             width: 670px;
@@ -660,21 +661,23 @@
             display: flex;
             justify-content: space-between;
         }
-        &-buttons{
+
+        &-buttons {
             display: flex;
             align-items: center;
             margin-bottom: 8px;
         }
-        &-circle{
+
+        &-circle {
             width: 15px;
             height: 15px;
             border-radius: 50%;
             background: $white;
             border: 1px solid $gray;
             margin-right: 8px;
-            
-            &.active{
-                background:$gray;
+
+            &.active {
+                background: $gray;
             }
         }
 

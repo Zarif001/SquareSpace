@@ -122,6 +122,10 @@
             &-item:nth-last-child(2) {
                 margin: 40px 0;
             }
+
+            &-pressure:not([disabled]):hover {
+                background: $white;
+            }
         }
 
         &__exclusive {
@@ -197,10 +201,12 @@
                 font-size: 30px;
                 line-height: 35px;
             }
-            &-link{
-                font-size: 16px;   
+
+            &-link {
+                font-size: 16px;
             }
-            &-btn{
+
+            &-btn {
                 padding: 15px 20px;
             }
         }
@@ -213,47 +219,57 @@
     }
 
     .main {
-        &__content{
-            &-info{
+        &__content {
+            &-info {
                 flex-wrap: wrap;
                 justify-content: center;
             }
-            &-title{
+
+            &-title {
                 margin-top: 25px;
             }
-            &-item{
+
+            &-item {
                 display: flex;
                 flex-direction: column;
                 max-width: 360px;
             }
-            &-expertice{
+
+            &-expertice {
                 order: -1;
             }
-            &-text{
+
+            &-text {
                 margin-bottom: 15px;
             }
-            &-pressure{
+
+            &-pressure {
                 font-size: 10px;
             }
-            &-btn{
+
+            &-btn {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
                 text-align: center;
                 width: 90px;
             }
-            &-describtion{
+
+            &-describtion {
                 text-align: center;
             }
         }
+
         &__exclusive {
             &-picture {
                 width: 100%;
             }
-            &-right{
+
+            &-right {
                 width: 100%;
             }
-            &-img{
+
+            &-img {
                 height: auto;
             }
         }
@@ -288,18 +304,21 @@
 
             }
         }
-        &__point{
-            &-slide{
+
+        &__point {
+            &-slide {
                 width: 300px;
                 margin-right: auto;
             }
-            &-slides img{
+
+            &-slides img {
                 width: 300px;
                 height: 250px;
             }
         }
-        &__piano{
-            height: 500px   ;
+
+        &__piano {
+            height: 500px;
         }
     }
 
@@ -315,14 +334,16 @@
             &-right {
                 margin-top: 25px;
             }
-            &-products{
+
+            &-products {
                 margin-right: 10px;
             }
         }
     }
 }
-@media(max-width:400px){
-    .main__exclusive-picture{
+
+@media(max-width:400px) {
+    .main__exclusive-picture {
         height: 250px;
     }
 }
