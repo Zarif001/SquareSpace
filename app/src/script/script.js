@@ -22,12 +22,12 @@ sortInfo.addEventListener('click', (e) => {
 })
 sortDetails.forEach(item => {
     item.addEventListener('click', (e) => {
-        chooseText(i)
+        item.classList.toggle('active')
     })
 })
 contentPressure.forEach((item, i) => {
     item.addEventListener('click', () => {
-        chooseText(i)
+        item.classList.toggle('active')
     })
 })
 // Main Point
