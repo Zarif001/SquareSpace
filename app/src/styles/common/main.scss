@@ -261,10 +261,12 @@
             border: 1px solid $gray;
             border-bottom: none;
             box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
-            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.5s;
 
             &.active {
-                display: block;
+                max-height: 100px;
             }
         }
 
@@ -888,11 +890,13 @@
             line-height: 24px;
             color: $white;
             font-family: 'Roboto-Regular';
-            display: none;
+            max-height: 0;
+            overflow: hidden;
             margin-bottom: 20px;
+            transition: 0.5s;
 
             &.active {
-                display: block;
+                max-height: 100px;
             }
         }
 

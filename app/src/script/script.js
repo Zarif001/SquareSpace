@@ -147,6 +147,7 @@ lastText.forEach(elem =>{
     elem.addEventListener('click', () =>{
         lastShadowText.innerHTML = elem.innerHTML
         lastSort[0].classList.remove('active')
+        lastSpan[0].classList.toggle('active')
     })
 })
 
@@ -155,6 +156,7 @@ lastDescribe.forEach(elem =>{
     elem.addEventListener('click', () => {
         lastLangText.innerHTML = elem.innerHTML
         lastSort[1].classList.remove('active')
+        lastSpan[1].classList.toggle('active')
     })
 })
 
