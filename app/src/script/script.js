@@ -27,7 +27,11 @@ sortDetails.forEach(item => {
 })
 contentPressure.forEach(item => {
     item.addEventListener('click', () => {
-        item.classList.toggle('active')
+        if(item.classList.contains('active')){
+            item.classList.remove('active')
+        } else {
+            item.classList.add('active')
+        }
     })
 })
 // Main Point

@@ -30,10 +30,12 @@
             width: 100%;
             background: #1A1A1A;
             border: 1px solid #1A1A1A;
-            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.5s;
 
             &.active {
-                display: block;
+                max-height: 160px;
             }
         }
 
@@ -65,7 +67,6 @@
             font-family: 'Roboto-Regular';
             padding: 17px 15px;
             cursor: pointer;
-
         }
 
         &-text,
