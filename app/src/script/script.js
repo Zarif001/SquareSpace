@@ -20,23 +20,15 @@ sortInfo.addEventListener('click', (e) => {
     }
     e.preventDefault()
 })
-sortDetails.forEach(item => {
+sortDetails.forEach((item, i) => {
     item.addEventListener('click', (e) => {
-        if (item.classList.contains('active')) {
-            item.classList.remove('active')
-        } else {
-            item.classList.add('active')
-        }
+        removeCircle(sortDetails, i)
         
     })
 })
 contentPressure.forEach((item, i) => {
     item.addEventListener('click', () => {
-        if(item.classList.contains('active')){
-            item.classList.remove('active')
-        } else{
-            item.classList.add('active')
-        }
+        removeCircle(contentPressure, i)
     })
 })
 // Main Point
@@ -70,14 +62,14 @@ const planCircle = document.querySelectorAll('.main__plans-circle')
 planCircle.forEach((item, i)=>{
     planCircle[0].classList.add('active')
     item.addEventListener('click', () =>{
-        removeCircle(i)
+        removeCircle(planCircle, i)
     })
 })
-function removeCircle(index) {
-    planCircle.forEach(dot => {
+function removeCircle(element, index) {
+    element.forEach(dot => {
         dot.classList.remove('active')
     })
-    planCircle[index].classList.add('active')
+    element[index].classList.add('active')
     
 }
 // // Main Create
